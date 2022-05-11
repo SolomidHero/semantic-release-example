@@ -10,7 +10,8 @@ module.exports = {
     {
       name: 'alpha',
       prerelease: true
-    }
+    },
+    '+([0-9])?(.{+([0-9]),x}).x'
   ],
   plugins: [
     '@semantic-release/commit-analyzer',
@@ -25,7 +26,6 @@ module.exports = {
       '@semantic-release/npm',
       {
         npmPublish: false,
-        // tarballDir: false,
       }
     ],
     '@semantic-release/github',
@@ -33,6 +33,7 @@ module.exports = {
       '@semantic-release/git',
       {
         assets: ['CHANGELOG.md', 'dist/**'],
+        // assets: ['CHANGELOG.md', 'dist/**', 'package.json'], // to update git version of package.json
         message: 'chore(release): set `package.json` to ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
       }
     ]

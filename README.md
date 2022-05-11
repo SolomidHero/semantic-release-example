@@ -15,11 +15,18 @@ Uses:
 
 ## References:
 
+
 ### Links
+
 https://dev.to/kouts/automated-versioning-and-package-publishing-using-github-actions-and-semantic-release-1kce
+
 https://semantic-release.gitbook.io/semantic-release/usage/getting-started
+
 https://semantic-release.gitbook.io/semantic-release/support/faq
 
+
 ### Repos
+
 [commitlint](https://github.com/conventional-changelog/commitlint)
+
 [semantic-release](https://github.com/semantic-release/semantic-release)
