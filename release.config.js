@@ -1,8 +1,14 @@
 module.exports = {
   branches: [
     'master',
+    'next',
+    'next-major',
     {
       name: 'beta',
+      prerelease: true
+    },
+    {
+      name: 'alpha',
       prerelease: true
     }
   ],
@@ -15,7 +21,13 @@ module.exports = {
         changelogFile: 'CHANGELOG.md'
       }
     ],
-    // '@semantic-release/npm',
+    [
+      '@semantic-release/npm',
+      {
+        npmPublish: false,
+        // tarballDir: false,
+      }
+    ],
     '@semantic-release/github',
     [
       '@semantic-release/git',
