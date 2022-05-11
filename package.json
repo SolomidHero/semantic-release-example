@@ -1,0 +1,23 @@
+{
+  "name": "semantic-release-example",
+  "version": "0.0.0",
+  "description": "Example of applying semantic release to node.js package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolomidHero/semantic-release-example.git"
+  },
+  "keywords": [
+    "npm",
+    "node-js"
+  ],
+  "author": "Dmitry Sadykov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SolomidHero/semantic-release-example/issues"
+  },
+  "homepage": "https://github.com/SolomidHero/semantic-release-example#readme"
+}
