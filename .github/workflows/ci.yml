@@ -1,5 +1,8 @@
 name: Release
 
+env:
+  GITHUB_TOKEN: ${{ secrets.PAT }}
+
 on:
   push:
     branches: [master]
